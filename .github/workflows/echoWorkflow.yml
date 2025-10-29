@@ -12,6 +12,6 @@ jobs:
     steps:
 
       - name: Print current date
-        run: |
+        run: | #allows multi line commands
           echo "Current date and time:"
           date
