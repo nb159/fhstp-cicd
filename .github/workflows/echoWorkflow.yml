@@ -1,0 +1,17 @@
+name: Echo Current Date
+
+on:
+  push:        # Runs on every push
+    branches:
+      - 'main'   # All branches
+
+jobs:
+  echo-date:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Print current date
+        run: | #allows multi line commands
+          echo "Current date and time:"
+          date
